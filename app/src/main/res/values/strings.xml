@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Pet Allies</string>
+    <string name="greetings">Hi! Welcome</string>
+    <string name="application_logo">Application Logo</string>
+    <string name="announcement_banner">Announcement Banner</string>
+
+    <!-- Dashboard CardView Description -->
+    <string name="text_picture">Hi FurMom and FurDad\nJoin us as we extend\na warm welcome to you!</string>
+    <string name="dashboard_product_description">A card view containing product information</string>
+    <string name="dashboard_services_description">A card view containing services information</string>
+    <string name="dashboard_profile_description">A card view containing profile information</string>
+    <string name="dashboard_about_us_description">A card view containing About Us information</string>
+
+    <!-- Dashboard Imageview Section -->
+    <string name="product_image_logo">Product Image Logo</string>
+    <string name="services_image_logo">Services Image Logo</string>
+    <string name="profile_image_logo">Profile Image Logo</string>
+    <string name="about_us_image_logo">About Us Image Logo</string>
+
+    <!-- Dashboard TextView Description -->
+    <string name="product_textview">Product</string>
+    <string name="services_textview">Services</string>
+    <string name="profile_textview">Employees</string>
+    <string name="about_us_textview">About Us</string>
+
+    <!-- Bottom Navigation Strings -->
+    <string name="bottom_home">Home</string>
+    <string name="bottom_message">Message</string>
+    <string name="bottom_settings">Settings</string>
 </resources>

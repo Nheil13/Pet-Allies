@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int SPLASH_SCREEN = 5000;
 
         // Use a Handler to delay the transition to the 'Dashboard' activity
-        /*new Handler().postDelayed(() -> {
+        new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, Dashboard.class);
 
             // Check if ActivityOptions is supported
@@ -41,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
             // Finish the current activity to prevent going back to it from the Login activity
             finish();
-        }, SPLASH_SCREEN);*/
+        }, SPLASH_SCREEN);
     }
 }
