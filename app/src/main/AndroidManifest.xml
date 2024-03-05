@@ -36,6 +36,9 @@
         android:theme="@style/Theme.PetAllies"
         tools:targetApi="31">
         <activity
+            android:name=".Employee"
+            android:exported="false" />
+        <activity
             android:name=".ServicesAD"
             android:exported="false" />
         <activity

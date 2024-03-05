@@ -81,14 +81,14 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
-        /*
+
         Employees = findViewById(R.id.employees);
         Employees.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, com.example.petallies.Employees.class);
+            Intent intent = new Intent(Dashboard.this, com.example.petallies.Employee.class);
             startActivity(intent);
         });
 
-         */
+
 
         /*
         AboutUs = findViewById(R.id.aboutUs);
@@ -103,7 +103,7 @@ public class Dashboard extends AppCompatActivity {
         // Initialize views
         imageProduct = findViewById(R.id.imageProduct);
         imageServices = findViewById(R.id.imageServices);
-        //imageEmployees = findViewById(R.id.imageEmployees);
+        imageEmployees = findViewById(R.id.imageEmployees);
         //imageAboutUs = findViewById(R.id.imageAboutUs);
 
 
@@ -116,10 +116,10 @@ public class Dashboard extends AppCompatActivity {
         loadImage();
 
 
-        /*
+
         urlEmployees = "https://drive.google.com/uc?id=1Sx1F2fXUaJsEfb70nX4r2c93-GkKEXns";
         loadImage();
-         */
+
 
         /*
         urlAboutUs = "https://drive.google.com/uc?id=1t_rQ1fevQ4Aqj_9UvkVagwxTe7PvGjEE";
@@ -234,7 +234,7 @@ public class Dashboard extends AppCompatActivity {
                 });
 
 
-        /*
+
         // Load image for 'urlEmployees' into 'imageEmployees'
         Picasso.get()
                 .load(urlEmployees)
@@ -251,7 +251,7 @@ public class Dashboard extends AppCompatActivity {
                         // Handle error if image loading fails
                     }
                 });
-         */
+
 
         /*
         // Load image for 'urlAboutUs' into 'imageAboutUs'

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- CardView to display information about a staff member -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_bg">
+
+        <!-- ConstraintLayout for arranging views within the CardView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ImageView for displaying the staff member's image -->
+            <ImageView
+                android:id="@+id/staffImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_bg"
+                android:contentDescription="@string/location_imageview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- TextView for displaying the staff member's name -->
+            <TextView
+                android:id="@+id/staffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employee_name"
+                android:textSize="20sp"
+                android:textColor="#26273A"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/staffImage"
+                app:layout_constraintTop_toTopOf="@id/staffImage"/>
+
+            <!-- TextView for displaying the staff member's role -->
+            <TextView
+                android:id="@+id/staffRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/staff_role"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/staffImage"
+                app:layout_constraintTop_toBottomOf="@id/staffName"/>
+
+            <!-- SwitchCompat for indicating the availability of the staff -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/staffAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/thumb_selector"
+                app:track="@drawable/track_selector"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toTopOf="@id/staffImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="30dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

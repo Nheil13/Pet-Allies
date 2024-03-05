@@ -81,5 +81,15 @@
     <string name="groomingStatement">⭐⭐⭐⭐⭐(5/5)\n\nWe understand the importance of maintaining your pet\'s hygiene and appearance. Our grooming services include bathing, brushing, haircuts, and nail trimming,
         ensuring your pet looks and feels their best.</string>
 
+    <string name="doctor_and_staffs">Doctor and Staffs</string>
+
+    <string name="specialist">Find our Specialist</string>
+
+    <string name="location_imageview">Location Imageview</string>
+
+    <string name="employee_name">Name</string>
+
+    <string name="staff_role">Staff Role</string>
+
 
 </resources>
