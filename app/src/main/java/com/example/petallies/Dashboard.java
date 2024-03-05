@@ -74,13 +74,12 @@ public class Dashboard extends AppCompatActivity {
             startActivity(intent);
         });
 
-        /*Services = findViewById(R.id.services);
+        Services = findViewById(R.id.services);
         Services.setOnClickListener(v -> {
             Intent intent = new Intent(Dashboard.this, com.example.petallies.Services.class);
             startActivity(intent);
         });
 
-         */
 
         /*
         Employees = findViewById(R.id.employees);
@@ -103,7 +102,7 @@ public class Dashboard extends AppCompatActivity {
 
         // Initialize views
         imageProduct = findViewById(R.id.imageProduct);
-        //imageServices = findViewById(R.id.imageServices);
+        imageServices = findViewById(R.id.imageServices);
         //imageEmployees = findViewById(R.id.imageEmployees);
         //imageAboutUs = findViewById(R.id.imageAboutUs);
 
@@ -112,10 +111,10 @@ public class Dashboard extends AppCompatActivity {
         urlProduct = "https://drive.google.com/uc?id=1PYgSHRstKm2LHHse_4tPaguZTXV-IbCG";
         loadImage();
 
-        /*
+
         urlServices = "https://drive.google.com/uc?id=1sFkQeXgDDIpWViygCjvMEntu6US-vfaN";
         loadImage();
-         */
+
 
         /*
         urlEmployees = "https://drive.google.com/uc?id=1Sx1F2fXUaJsEfb70nX4r2c93-GkKEXns";
@@ -216,7 +215,7 @@ public class Dashboard extends AppCompatActivity {
                     }
                 });
 
-        /*
+
         // Load image for 'urlServices' into 'imageServices'
         Picasso.get()
                 .load(urlServices)
@@ -233,7 +232,7 @@ public class Dashboard extends AppCompatActivity {
                         // Handle error if image loading fails
                     }
                 });
-         */
+
 
         /*
         // Load image for 'urlEmployees' into 'imageEmployees'

@@ -51,4 +51,35 @@
 
     <string name="other_essential_header">Other Essentials</string>
 
+    <string name="services_title">Services</string>
+
+    <string name="about_us_images">About Us Image</string>
+    <string name="title">Title</string>
+    <string name="desc">Desc</string>
+    <string name="description">Description</string>
+
+    <string name="detail_title">Detail Title</string>
+    <string name="content_image">Content Image</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="services">Services</string>
+    <string name="consultation">⭐⭐⭐⭐⭐(5/5)\n\nWe strongly believe that an ounce of prevention is worth of a pound of cure especially with pets that age much faster than humans.
+        As such, you will find our veterinarians focusing on preventive care options. Every patient is evaluated and an individual treatment plan is discussed.</string>
+
+    <string name="pet_wellness">⭐⭐⭐⭐⭐(5/5)\n\nBy enrolling in our Pet Wellness Program, you are making a proactive commitment to your pet\'s health and happiness. With comprehensive preventive care,
+        personalized attention, and a dedicated team of professionals, we aim to enhance and extend the lives of your beloved pets.</string>
+
+    <string name="surgery">⭐⭐⭐⭐(4/5)\n\nWhen your pet requires surgical intervention, our skilled team is here to provide compassionate and professional care.
+        Whether it\'s a routine spay/neuter procedure or a complex orthopedic surgery, we prioritize your pet\'s safety and comfort throughout the entire process.</string>
+
+    <string name="lab_services">⭐⭐⭐⭐⭐(5/5)\n\nTo aid in accurate diagnoses, our clinic offers a range of laboratory services. From blood work and urinalysis to diagnostic imaging,
+        we utilize advanced technology and techniques to assess your pet\'s health and provide timely results.</string>
+
+    <string name="dental_services">⭐⭐⭐⭐⭐(5/5)\n\nMaintaining good oral health is crucial for your pet\'s overall well being. Our dental care services include professional cleanings,
+        tooth extractions when necessary, and advice on home dental care techniques to keep their teeth and gums healthy.</string>
+
+    <string name="groomingStatement">⭐⭐⭐⭐⭐(5/5)\n\nWe understand the importance of maintaining your pet\'s hygiene and appearance. Our grooming services include bathing, brushing, haircuts, and nail trimming,
+        ensuring your pet looks and feels their best.</string>
+
+
 </resources>

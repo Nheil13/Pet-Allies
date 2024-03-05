@@ -36,6 +36,12 @@
         android:theme="@style/Theme.PetAllies"
         tools:targetApi="31">
         <activity
+            android:name=".ServicesAD"
+            android:exported="false" />
+        <activity
+            android:name=".Services"
+            android:exported="false" />
+        <activity
             android:name=".VitaminsSupplements"
             android:exported="false" />
         <activity
