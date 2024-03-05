@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <!-- CardView to display a card with specific attributes -->
+    <!-- CardView for Displaying RecyclerView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/sRecCard"
+        android:id="@+id/recCard"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         app:cardElevation="8dp"
         app:cardCornerRadius="16dp"
         app:cardUseCompatPadding="true">
 
-        <!-- Main LinearLayout for the card content -->
+        <!-- Main Content Layout Inside CardView -->
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="match_parent"
@@ -22,70 +22,69 @@
             android:background="@drawable/about_us_border_top"
             android:weightSum="5.5">
 
-            <!-- ImageView for displaying an image, taking 4/5 of the total height -->
+            <!-- RecyclerView Image -->
             <ImageView
-                android:id="@+id/sRecImage"
+                android:id="@+id/recImage"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="4"
                 android:scaleType="centerCrop"
                 android:contentDescription="@string/about_us_images"/>
 
-            <!-- Nested LinearLayout for the title, description, and language -->
+            <!-- RecyclerView Details Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:weightSum="2"
                 android:layout_weight="1.5"
-                android:background="@drawable/about_us_card_border"
-                android:baselineAligned="false">
+                android:background="@drawable/about_us_card_border">
 
-                <!-- LinearLayout for title and description, taking 1.3/2 of the total width -->
+                <!-- RecyclerView Text Details -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.3  "
+                    android:layout_weight="1.3"
                     android:padding="10dp"
                     android:orientation="vertical">
 
-                    <!-- TextView for the title -->
+                    <!-- RecyclerView Title -->
                     <TextView
-                        android:id="@+id/sRecTitle"
+                        android:id="@+id/recTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="Title"
                         android:layout_marginStart="10dp"
                         android:fontFamily="@font/bangers"
+                        android:textSize="20sp"
                         android:maxLines="1"
-                        android:text="@string/title"
-                        android:textColor="@color/Blue"
-                        android:textSize="20sp" />
+                        android:textColor="@color/Blue"/>
 
-                    <!-- TextView for the description -->
+                    <!-- RecyclerView Description -->
                     <TextView
-                        android:id="@+id/sRecDesc"
+                        android:id="@+id/recDesc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bangers"
-                        android:text="@string/description"
+                        android:text="Desc"
                         android:textSize="18sp"
                         android:maxLines="0"/>
 
                 </LinearLayout>
 
-                <!-- LinearLayout for the language, taking 0.7/2 of the total width -->
+                <!-- RecyclerView Subject Section -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.7"
                     android:gravity="center">
 
-                    <!-- TextView for the language -->
+                    <!-- RecyclerView Subject -->
                     <TextView
-                        android:id="@+id/sRecLang"
-                        android:layout_width="0dp"
+                        android:id="@+id/recLang"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.7"
-                        android:text="@string/description"
+                        android:text="Description"
                         android:textColor="@color/Blue"
                         android:textSize="18sp"
                         android:textAlignment="center"/>
@@ -97,6 +96,7 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 
 </LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message"
+    android:background="#EEF2F5">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollViewSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:id="@+id/MainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Banner -->
+            <LinearLayout
+                android:id="@+id/headerBanner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/Blue"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/anton"
+                        android:text="@string/activity_title"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <!-- Announcement Section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reach_us"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/announcementBanner"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/rounded_bg"
+                    android:contentDescription="@string/announcement_banner"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginBottom="50dp">
+
+                    <!-- Location Section -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/location"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="70dp"
+                                android:fontFamily="@font/poppins_light"
+                                android:padding="10dp"
+                                android:text="@string/location_string"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                tools:layout_editor_absoluteX="70dp" />
+
+                            <ImageView
+                                android:id="@+id/imageLocation"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="30dp"
+                                android:background="@drawable/rounded_bg"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/location_imageview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/address"
+                                android:textColor="@color/black"
+                                app:layout_constraintTop_toBottomOf="@id/textLocation"
+                                app:layout_constraintStart_toStartOf="@id/textLocation" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Contact Number Section -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/contactNumber"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/location">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textContactNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="70dp"
+                                android:fontFamily="@font/poppins_light"
+                                android:padding="10dp"
+                                android:text="@string/contact_number"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                tools:layout_editor_absoluteX="70dp" />
+
+                            <ImageView
+                                android:id="@+id/imageContacts"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="30dp"
+                                android:background="@drawable/rounded_bg"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/contact_imageview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/contact_details"
+                                android:textColor="@color/black"
+                                app:layout_constraintTop_toBottomOf="@id/textContactNumber"
+                                app:layout_constraintStart_toStartOf="@id/textContactNumber" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Email Section -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/email"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/contactNumber">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="70dp"
+                                android:fontFamily="@font/poppins_light"
+                                android:padding="10dp"
+                                android:text="@string/email_us"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                tools:layout_editor_absoluteX="70dp" />
+
+                            <ImageView
+                                android:id="@+id/imageEmail"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="30dp"
+                                android:background="@drawable/rounded_bg"
+                                android:tag="https://drive.google.com/uc?id=1fZ7xzCTceMPmTSCh5iutKn5cyYCMxuQK"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/email_imageview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/email"
+                                android:textColor="@color/black"
+                                app:layout_constraintTop_toBottomOf="@id/textEmail"
+                                app:layout_constraintStart_toStartOf="@id/textEmail" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Facebook Section -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/facebook"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/email">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textFacebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="70dp"
+                                android:fontFamily="@font/poppins_light"
+                                android:padding="10dp"
+                                android:text="@string/facebook"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                tools:layout_editor_absoluteX="70dp" />
+
+                            <ImageView
+                                android:id="@+id/imageFacebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="30dp"
+                                android:background="@drawable/rounded_bg"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/facebook_imageview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/facebook_page_name"
+                                android:textColor="@color/black"
+                                app:layout_constraintTop_toBottomOf="@id/textFacebook"
+                                app:layout_constraintStart_toStartOf="@id/textFacebook" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_menu"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

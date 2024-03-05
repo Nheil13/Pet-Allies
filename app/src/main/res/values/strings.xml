@@ -28,39 +28,91 @@
     <string name="bottom_message">Message</string>
     <string name="bottom_settings">Settings</string>
 
-    <string name="back_arrow">Back Arrow</string>
+
+    <!-- Message Section -->
+    <string name="activity_title">Reach Us</string>
+    <string name="location_string">Location</string>
+    <string name="address">Unit 6, Megal Taft Bldg., 2140 Taft Ave.\nCor. Taylo St., 55 Zone 7, Pasay, 1300\nMetro Manila</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="contact_details">09257255437</string>
+    <string name="email_us">Email Us</string>
+    <string name="email">pet_alliesanimalclinic@yahoo.com</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_page_name">Pet Allies - Animal Clinic</string>
+
+    <!-- About Us -->
+    <string name="about_us_title">About Us</string>
+
+    <!-- Login String -->
+    <string name="login_image_logo">Login Image</string>
+    <string name="login_greetings">Hi Paw-Allies, Welcome Back</string>
+    <string name="login_instruction">Sign In to continue</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="log_in_button">LOG IN</string>
+    <string name="register_button">NEW USER? SIGN UP</string>
+
+    <!-- Signup String -->
+    <string name="signup_greetings">Welcome aboard!</string>
+    <string name="signup_instructions">Take the first step by Signing Up</string>
+    <string name="pet_name_signup">Pet Name</string>
+    <string name="parent_name_signup">Parent Name</string>
+    <string name="email_signup">Email</string>
+    <string name="phone_no_signup">Phone No.</string>
+    <string name="password_signup">Password</string>
+    <string name="confirm_password_signup">Confirm Password</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="login_in_sign_up_form">Already have an Account? LogIn</string>
 
 
+    <!-- Message String -->
+    <string name="location_imageview">Location Imageview</string>
+    <string name="contact_imageview">Contact ImageView</string>
+    <string name="email_imageview">Email Imageview</string>
+    <string name="facebook_imageview">Facebook ImageView</string>
     <string name="product_activity_title">Products</string>
     <string name="categories">Categories</string>
-    <string name="image_description_cat">Image to show cat button in the category</string>
     <string name="button_description_cat">Button to show cat kittens</string>
+    <string name="image_description_cat">Image to show cat button in the category</string>
     <string name="click_here_cat">click here</string>
 
-    <string name="kittens_and_adults_header">Kittens and Adults</string>
-    <string name="category_list">Category List</string>
-
-    <string name="productDescription">Product Description</string>
-    <string name="product_name">Product Name</string>
-    <string name="product_price">Product Price</string>
-    <string name="product_stocks">Product Stocks</string>
-
+    <!-- Dog Section String -->
     <string name="puppies_and_adults_header">Puppies and Adults</string>
 
+    <!-- Cat Section String -->
+    <string name="kittens_and_adults_header">Kittens and Adults</string>
+
+    <!-- Vitamins and Supplement Section String -->
     <string name="vitamins_supplements_header">Vitamins and Supplements</string>
+    <string name="productDescription">Product Description</string>
+    <string name="back_arrow">Back Arrow</string>
 
+    <!-- Other Essential Section String -->
     <string name="other_essential_header">Other Essentials</string>
-
-    <string name="services_title">Services</string>
-
     <string name="about_us_images">About Us Image</string>
-    <string name="title">Title</string>
-    <string name="desc">Desc</string>
-    <string name="description">Description</string>
-
-    <string name="detail_title">Detail Title</string>
     <string name="content_image">Content Image</string>
+    <string name="detail_title">Detail Title</string>
+    <string name="description">Description</string>
     <string name="contact_us">Contact Us</string>
+
+    <string name="our_history">Celebrating 11 years of dedicated service in the veterinary industry, our clinic takes pride in a rich history marked by unwavering commitment and expertise
+        in animal care. Over the years, we have steadfastly served as a trustworthy ally in fostering the health and happiness of countless beloved pets.
+        Experience our enduring dedication as we continue to provide top-notch medical care and genuine compassion for your cherished animal companions.
+        Feel free to reach out to us for more information</string>
+
+    <string name="why_choose_us">Committed to the well-being and satisfaction of your furry companions, our adept team of veterinary experts ensures exceptional patient encounters,
+        reflecting our unwavering dedication to excellence in care. Contact us to learn more about how we prioritize the health and happiness of your beloved pets.
+        Your furry babies deserve the best, and were here to provide it.</string>
+
+    <string name="staff">Step into a world where your pets joy and well-being take center stage. Our dedicated team of veterinary doctors and
+        compassionate staff are committed to providing top-notch care, ensuring your furry friends live their happiest and healthiest lives.
+        With a blend of expertise, cutting-edge technology, and genuine love for animals, we create an environment where your pets feel cherished and nurtured.
+        Join us in this journey of exceptional pet care, where your trust meets our passion for creating lasting moments of joy for your beloved companions.</string>
+
+    <string name="customers">Thanks to our devoted clients, our veterinary clinic has remained open, dedicated to providing unparalleled care for your fur babies.
+        We are immensely grateful for the ongoing support that allows us to extend our services and continue nurturing the well-being of your beloved pets.
+        Your trust fuels our commitment to excellence, and we look forward to many more years of delivering compassionate care to your furry family members.</string>
 
     <string name="services">Services</string>
     <string name="consultation">⭐⭐⭐⭐⭐(5/5)\n\nWe strongly believe that an ounce of prevention is worth of a pound of cure especially with pets that age much faster than humans.
@@ -81,15 +133,50 @@
     <string name="groomingStatement">⭐⭐⭐⭐⭐(5/5)\n\nWe understand the importance of maintaining your pet\'s hygiene and appearance. Our grooming services include bathing, brushing, haircuts, and nail trimming,
         ensuring your pet looks and feels their best.</string>
 
-    <string name="doctor_and_staffs">Doctor and Staffs</string>
-
+    <string name="app_logo">App Logo</string>
+    <string name="sign_up_greetings">Welcome aboard!</string>
+    <string name="instruction">Take the first step by Signing Up</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="parent_name">Parent Name</string>
+    <string name="parent_email">Parent Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in_button">LOG IN</string>
+    <string name="register_login_button">Already have an Account? LogIn</string>
+    <string name="sign_in">Sign In to continue</string>
     <string name="specialist">Find our Specialist</string>
-
-    <string name="location_imageview">Location Imageview</string>
-
+    <string name="top_doctors">Top Doctors</string>
     <string name="employee_name">Name</string>
-
     <string name="staff_role">Staff Role</string>
+
+    <string name="terms_and_conditions_text">
+    <![CDATA[
+    <br/><b>TERMS AND CONDITION</b><br/>
+    <br/><b>Last Updated:</b> March 4, 2024<br/>
+    <br/>Thank you for choosing Pet Allies (referred to as the "Service" or "Application"). We take the terms and conditions very seriously. These terms and conditions govern the use of the App information. We kindly ask you to thoroughly review these terms.<br/>
+    <br/>These Terms and Conditions ("<b>Terms</b>") shall represent the legal agreement between you ("<b>User</b>") and Pet Allies Animal Clinic ("<b>we</b>", "<b>us</b>", or "<b>our</b>"). By downloading or using the App, you agree to be bound by these <b>Terms</b>:<br/>
+    <br/><b><big>1. Use of the App</big></b><br/>
+    <br/>1.1. The App</b> is intended for use by individuals seeking information about veterinary services provided by Pet Allies Animal Clinic.<br/>
+    <br/>1.2. You agree not to use the App</b> for any illegal or unauthorized purpose, or in any manner that violates these <b>Terms</b>.<br/>
+    <br/><b><big>2. Intellectual Property</big></b><br/>
+    <br/>2.1. All content included in the App</b>, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Pet Allies Animal Clinic or its content suppliers and is protected by Philippine and international copyright laws.<br/>
+    <br/>2.2. You may not modify, reproduce, distribute, transmit, display, perform, or create derivative works of any content from the App</b> without our prior written consent.<br/>
+    <br/><b><big>3. Disclaimer of Warranties</big></b><br/>
+    <br/>3.1. The App is provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. We do not warrant that the App will be uninterrupted or error-free, that defects will be corrected, or that the App is free of viruses or other harmful components.<br/>
+    <br/><b><big>4. Changes to Terms</big></b><br/>
+    <br/>4.1. We reserve the right to modify or revise these Terms at any time</b>. Any changes will be effective immediately upon posting the revised <b>Terms</b> in the App. Your continued use of the App following the posting of changes constitutes your acceptance of such changes.<br/>
+    <br/><b><big>5. Contact Us</big></b><br/>
+    <br/>5.1. If you have any questions about these Terms</b>, please contact us at pet_alliesanimalclinic@yahoo.com.
+    ]]>
+</string>
+    <string name="doctor_and_staffs">Doctor and Staffs</string>
+    <string name="services_title">Services</string>
+    <string name="category_list">Category List</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_stocks">Product Stocks</string>
+    <string name="title">Title</string>
 
 
 </resources>

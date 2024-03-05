@@ -80,56 +80,43 @@ public class Dashboard extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
         Employees = findViewById(R.id.employees);
         Employees.setOnClickListener(v -> {
             Intent intent = new Intent(Dashboard.this, com.example.petallies.Employee.class);
             startActivity(intent);
         });
 
-
-
-        /*
         AboutUs = findViewById(R.id.aboutUs);
         AboutUs.setOnClickListener(v -> {
             Intent intent = new Intent(Dashboard.this, com.example.petallies.AboutUs.class);
             startActivity(intent);
         });
 
-         */
-
 
         // Initialize views
         imageProduct = findViewById(R.id.imageProduct);
         imageServices = findViewById(R.id.imageServices);
         imageEmployees = findViewById(R.id.imageEmployees);
-        //imageAboutUs = findViewById(R.id.imageAboutUs);
+        imageAboutUs = findViewById(R.id.imageAboutUs);
 
 
         // Set the initial image URL
         urlProduct = "https://drive.google.com/uc?id=1PYgSHRstKm2LHHse_4tPaguZTXV-IbCG";
         loadImage();
 
-
         urlServices = "https://drive.google.com/uc?id=1sFkQeXgDDIpWViygCjvMEntu6US-vfaN";
         loadImage();
-
-
 
         urlEmployees = "https://drive.google.com/uc?id=1Sx1F2fXUaJsEfb70nX4r2c93-GkKEXns";
         loadImage();
 
-
-        /*
         urlAboutUs = "https://drive.google.com/uc?id=1t_rQ1fevQ4Aqj_9UvkVagwxTe7PvGjEE";
         loadImage();
-         */
 
         // Register a broadcast receiver to listen for network changes
         registerNetworkReceiver();
 
-        /*
+
         //Bottom Navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
@@ -144,7 +131,6 @@ public class Dashboard extends AppCompatActivity {
             }
             return false;
         });
-         */
 
     }
 
@@ -215,7 +201,6 @@ public class Dashboard extends AppCompatActivity {
                     }
                 });
 
-
         // Load image for 'urlServices' into 'imageServices'
         Picasso.get()
                 .load(urlServices)
@@ -232,8 +217,6 @@ public class Dashboard extends AppCompatActivity {
                         // Handle error if image loading fails
                     }
                 });
-
-
 
         // Load image for 'urlEmployees' into 'imageEmployees'
         Picasso.get()
@@ -252,8 +235,6 @@ public class Dashboard extends AppCompatActivity {
                     }
                 });
 
-
-        /*
         // Load image for 'urlAboutUs' into 'imageAboutUs'
         Picasso.get()
                 .load(urlAboutUs)
@@ -270,7 +251,7 @@ public class Dashboard extends AppCompatActivity {
                         // Handle error if image loading fails
                     }
                 });
-         */
+
     }
 
 }
