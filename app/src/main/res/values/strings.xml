@@ -37,5 +37,18 @@
     <string name="button_description_cat">Button to show cat kittens</string>
     <string name="click_here_cat">click here</string>
 
+    <string name="kittens_and_adults_header">Kittens and Adults</string>
+    <string name="category_list">Category List</string>
+
+    <string name="productDescription">Product Description</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_stocks">Product Stocks</string>
+
+    <string name="puppies_and_adults_header">Puppies and Adults</string>
+
+    <string name="vitamins_supplements_header">Vitamins and Supplements</string>
+
+    <string name="other_essential_header">Other Essentials</string>
 
 </resources>

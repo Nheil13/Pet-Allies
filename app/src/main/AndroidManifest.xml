@@ -36,6 +36,9 @@
         android:theme="@style/Theme.PetAllies"
         tools:targetApi="31">
         <activity
+            android:name=".VitaminsSupplements"
+            android:exported="false" />
+        <activity
             android:name=".OtherEssential"
             android:exported="false" />
         <activity
