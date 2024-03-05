@@ -36,6 +36,15 @@
         android:theme="@style/Theme.PetAllies"
         tools:targetApi="31">
         <activity
+            android:name=".OtherEssential"
+            android:exported="false" />
+        <activity
+            android:name=".DogsProduct"
+            android:exported="false" />
+        <activity
+            android:name=".CatProducts"
+            android:exported="false" />
+        <activity
             android:name=".Products"
             android:exported="false" />
         <activity

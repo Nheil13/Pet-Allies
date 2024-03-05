@@ -12,4 +12,12 @@
     <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Large">
         <item name="android:progressDrawable">@drawable/custom_progress_bar</item>
     </style>
+
+    <style name="roundImageView" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+        <item name="color">#00000000</item>
+
+    </style>
 </resources>

@@ -4,6 +4,237 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEF2F5"
     tools:context=".Products">
+
+    <!-- Header Banner Section -->
+    <LinearLayout
+        android:id="@+id/headerBanner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/Blue"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ConstraintLayout for Header Content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <!-- ImageView for Back Arrow -->
+            <ImageView
+                android:id="@+id/arrowBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/back_arrow"
+                android:src="@drawable/back_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- TextView for Header Title -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/anton"
+                android:text="@string/product_activity_title"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBanner"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- Content Starts Here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ConstraintLayout for Categories Section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <!-- TextView for Categories Title -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/anton"
+                    android:padding="10dp"
+                    android:text="@string/categories"
+                    android:textAllCaps="true"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Cat and Kittens Product Button -->
+                <RelativeLayout
+                    android:id="@+id/catKittens"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/textView2">
+
+                    <!-- ShapeableImageView for Cat Category -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/catCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_image"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/image_description_cat" />
+
+                    <!-- Button for Cat and Kittens Product -->
+                    <Button
+                        android:id="@+id/catKittensButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#00000000"
+                        android:padding="5dp"
+                        android:contentDescription="@string/button_description_cat"
+                        android:text="@string/click_here_cat"
+                        android:textColor="#00000000"
+                        android:labelFor="@id/catKittens" />
+
+                </RelativeLayout>
+
+                <!-- Dog and Puppies Product Button -->
+                <RelativeLayout
+                    android:id="@+id/dogPuppies"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/catKittens">
+
+                    <!-- ShapeableImageView for Dog Category -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/dogCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_image"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Button for Dog and Puppies Product -->
+                    <Button
+                        android:id="@+id/dogPuppiesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#00000000"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <!-- Vitamins and Supplements Product Button -->
+                <RelativeLayout
+                    android:id="@+id/vitaminSupplement"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/dogPuppies">
+
+                    <!-- ShapeableImageView for Vitamins and Supplements Category -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/vitaminSupplementCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_image"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Button for Vitamins and Supplements Product -->
+                    <Button
+                        android:id="@+id/vitaminSupplementButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#00000000"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <!-- Other Essentials Product Button -->
+                <RelativeLayout
+                    android:id="@+id/otherEssentials"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/vitaminSupplement">
+
+                    <!-- ShapeableImageView for Other Essentials Category -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/otherEssentialsCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_image"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Button for Other Essentials Product -->
+                    <Button
+                        android:id="@+id/otherEssentialsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#00000000"
+                        android:padding="5dp" />
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
